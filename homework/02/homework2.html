@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cafe Menu</title>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,700&display=swap" rel="stylesheet">
+	<style>
+
+	html, body {
+		height: 100%;
+		width: 100%;
+		margin: 0;
+	}
+	.container{
+		background-color: #F5F8F9;
+		display: flex;
+		flex-flow: column wrap;
+	}
+	.header{ 
+		height: 15%;
+		width: 60%;
+		margin-left: 20%;
+		margin-right: 20%;
+		text-align: center;
+		font-size: 30px;
+		font-weight: 700;
+		font-family: 'Quicksand';
+		line-height: 100px;
+		margin-top: 2%;
+		margin-bottom: 4%;
+		text-transform: uppercase;
+	}
+	.subtext{
+		font-size: 10px;
+		line-height: initial;
+		font-weight: 100;
+		width: 80%;
+		margin-right: 10%; 
+		margin-left: 10%;
+	}
+	.coffee-title {
+		font-family: 'Quicksand';
+		font-size:20px;
+		font-weight: 700;
+		text-transform: uppercase;
+		line-height: 70px;
+	}
+	.breakfast-title{
+		font-family: 'Quicksand';
+		font-size:20px;
+		font-weight: 700;
+		text-transform: uppercase;
+		line-height: 70px;
+	}
+	.bottom {
+		height: 85%;
+		width: 100%;
+		flex-wrap: wrap;
+		font-family: 'Quicksand';
+		font-weight: 400;
+		font-size: 13px;
+		background-color: white;
+		padding-top: 5%;
+		display:flex;
+		flex-direction: row;
+	}
+
+	.left {
+		width: 25%;
+		margin-left: 15%;
+		margin-right: 10%;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 5%
+	}
+	.right {
+		width:25%;
+		display: flex;
+		flex-direction: column;
+		margin-right: 15%;
+		margin-left: 10%;
+		margin-bottom: 5%;
+	}
+h1 {
+	font-family: 'Quicksand';
+	font-size: 15px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+@media (max-width: 900px){
+		.coffee-title{
+			font-size:23px;
+		}
+		.breakfast-title{
+			font-size: 23px;
+		}
+		.left{
+			width:40% ;
+			font-size:16px;
+			margin-left: 5%;
+			margin-right: 5%;
+		}
+		.right{
+			font-size:16px;
+			width: 40% ;
+			margin-left: 5%;
+			margin-right: 5% ;
+		}
+		h1{
+			font-size:19px;
+		}
+	}
+	@media (hover:none) {
+		.coffee-title{
+			font-size: 28px;
+	}
+	.breakfast-title{
+			font-size: 28px;
+	}
+	.left{
+			width: 65%;
+			margin-left: 15%;
+			margin-right: 20%;
+			font-size: 20px;
+			height: 85%;
+	}
+	.right{
+			width: 65%;
+			margin-left: 15%;
+			margin-right: 20%;
+			font-size: 20px;
+			height: 90%;
+	}
+		h1{
+			font-size: 23px;
+		}
+	}
+
+	</style>
+</head>
+<body>
+<div class="container">
+<div class="header">Bluestone Lane
+	<div class="subtext">
+	11601 Wilshire Blvd, Los Angeles, CA 90025
+	</div>
+</div>
+
+<div class="bottom">
+<div class="left">
+	<div class="coffee-title">Coffee</div>
+	<h1 class="coffee0">Flat White</h1>
+	<div class="coffee-text0">
+		An Australian classic. Espresso with steamed, silky textured milk and a thin layer of microfoam
+	</div>
+	<h1 class="coffee1">Espresso</h1>
+	<div class="coffee-text1">
+		If filter coffee was beer, then espresso is whiskey. Coffee that is brewed under high pressure and extracted in a short amount of time – resulting in a syrupy and highly concentrated beverage. Rotating single origins.
+	</div>
+	<h1 class="coffee2">Long Black</h1>
+	<div class="coffee-text2">
+		Single Origin espresso gently resting on a small amount of hot water for dilution.
+	</div>
+	<h1 class="coffee3">Hot Brew</h1>
+	<div class="coffee-text3">
+		Filter coffee that is rich and chocolatey
+	</div>
+	<h1 class="coffee4">Macchiato</h1>
+	<div class="coffee-text4">
+		A single shot of espresso with a stain of steamed milk and microfoam
+	</div>
+	<h1 class="coffee5">Latte</h1>
+	<div class="coffee-text5">
+		Espresso with steamed, silky textured milk and 1 inch of microfoam
+	</div>
+	<h1 class="coffee6">Cappuccino</h1>
+	<div class="coffee-text6">
+		Espresso with steamed, silky textured milk, microfoam and cocoa dusting on top
+	</div>
+	<h1 class="coffee7">Mocha</h1>
+	<div class="coffee-text7">
+		A latte with cocoa spun in the pitcher and dusted with chocolate shavings
+	</div>
+	<h1 class="coffee8">Iced Latte</h1>
+	<div class="coffee-text8">
+		Whole milk with a double espresso shot and ice
+	</div>
+	<h1 class="coffee9">Cold Brew</h1>
+	<div class="coffee-text9">
+		Flagstaff blend coffee ground and immersed in water for 12 hours to extract and form a concentrate
+	</div>
+</div>
+<div class="right">
+	<div class="breakfast-title">Breakfast</div>
+	<h1 class="breakfast0">AVOCADO TOAST W/ THE LOT (D)</h1>
+	<div class="breakfast-text0">
+		our classic avo smash w/ prosciutto, feta, heirloom tomatoes & soft herbs on toasted whole grain bread
+	</div>
+	<h1 class="breakfast1">AVOCADO TOAST</h1>
+	<div class="breakfast-text1">
+		our classic avo smash seasoned w/ fresh lemon juice, sea salt & black pepper, chili flakes & olive oil on toasted whole grain bread
+	</div>
+	<h1 class="breakfast2">AVOCADO & ROMESCO TOAST (D)</h1>
+	<div class="breakfast-text2">
+		roasted red-pepper romesco, sliced avocado, soft herbs & feta on toasted whole grain bread
+	</div>
+	<h1 class="breakfast3">SALMON TOAST (D)</h1>
+	<div class="breakfast-text3">
+		smoked salmon w/ cream cheese, dill, cracked black pepper & fresh lemon juice on toasted whole grain bread
+	</div>
+	<h1 class="breakfast4">GOATS CHEESE & PROSCIUTTO TOAST (D)</h1>
+	<div class="breakfast-text4">
+		goat cheese, prosciutto & honey w/ arugula on toasted whole grain bread
+	</div>
+	<h1 class="breakfast5">BANANA TOAST (N)</h1>
+	<div class="breakfast-text5">
+		fresh bananas sliced on toasted whole grain bread w/ almond butter, honey & cinnamon
+	</div>
+	<h1 class="breakfast6">TOAST BAR</h1>
+	<div class="breakfast-text6">
+		Your favorite toast served w/ a choice of spread: Vegemite & butter, almond butter, jam & butter
+	</div>
+	<h1 class="breakfast7">ALMOND OATMEAL (N)</h1>
+	<div class="breakfast-text7">
+		rolled oats served w/ shredded coconut, dried cranberries & cashew nuts topped w/ steamed almond milk
+	</div>
+	<h1 class="breakfast8">VEGAN CEREAL W/ BERRIES (V)</h1>
+	<div class="breakfast-text8">
+		Husk GF & Vegan granola & oat milk, topped w/ berries
+	</div>
+	<h1 class="breakfast9">KETO PROTEIN BOWL (D)</h1>
+	<div class="breakfast-text9">
+		poached egg, sliced avocado, feta & mixed leaves, garnished w/ romesco vinaigrette & microgreens
+	</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
