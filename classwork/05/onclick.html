@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<title>button</title>
+
+<body>
+	<button id ="hello-button">click me</button>
+</body>
+
+<script>
+	// We can store things into variables
+	// var thing = function(){}
+
+document.querySelector("#hello-button").onclick = function() {
+	// create a p element that says hello on to the screen
+	var p = document.createElement("p");
+	p.innerHTML = "hello";
+	document.body.appendChild(p);
+
+}
+
+
+
+</script>
