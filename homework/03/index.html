@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>main page</title>
+	<style>
+		body {
+			display: flex;
+			flex-direction: column;
+			}
+			.sidebar { flex: 0 0 150px; }
+			.content { flex: 1; }
+
+	</style>
+</head>
+<body></body>
+<script>
+var pages = {
+        "pages/home.html": "home",
+        "pages/writing.html": "writing",
+        "pages/drawings.html": "drawings",
+        "pages/sketchbook.html": "sketchbook",
+        "pages/prints.html": "prints",
+        "pages/travel.html": "travel",
+        "pages/organizations.html": "organizations",
+        "pages/contact.html": "contact",
+        "pages/links.html": "links"    
+      };
+
+      for (link in pages) {
+        if (pages.hasOwnProperty(link)) {
+          var a = document.createElement('a'),
+          nav = document.createTextNode(pages[link]);
+          a.href = link;
+          a.appendChild(nav);
+          document.body.appendChild(a);
+        }
+      }
+	</script>
+</html>
