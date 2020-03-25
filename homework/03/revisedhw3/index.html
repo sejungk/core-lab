@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Revised Homework 3</title>
+	<style>
+		body {
+		  height: 100%;
+		  display: flex;
+		  flex-direction: column;
+		  font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<script>
+	//array containing page names
+	var pages = ["home", "writings", "drawings", "sketchbook", "prints", "travel", "organizations", "contact", "links"]; 
+	
+	// do the following operations once for each string in the array
+	for (let i = 0; i < pages.length; i++){
+	  // create <a> tag
+	  var a = document.createElement('a'); 
+	  // a.appendChild = append document.createTextNode(pages[i]) to a
+	  // document.createTextNode = creates a text node in the document
+	  // (pages[i]) = takes strings from the array "pages" and inserts it into the text node
+	  a.appendChild(document.createTextNode(pages[i]));
+	  // creates links for each text node by adding ".html" to end of each string in the array 
+	   a.href = "pages/" + pages[i] + ".html";   
+	  // appends a to the document body
+	  document.body.appendChild(a);
+	}
+
+	</script>
+</body>
+</html>
